@@ -1,4 +1,4 @@
-<h3>Home</h3>
+<h3>Welcome <%= current_user.name unless current_user.name.nil?%></h3>
 <% if !current_user.nil? and current_user.admin? %>
   <% @users.each do |user| %>
     <p>User: <%=link_to user.email, user %> Role: <%= user.role unless user.role.nil? %></p>

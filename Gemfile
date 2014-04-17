@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
+gem 'execjs'
+gem 'therubyracer'
+gem 'ruby'
 gem 'rails', '4.1.0'
 gem 'sqlite3'
 gem 'sass-rails', '~> 4.0.3'
